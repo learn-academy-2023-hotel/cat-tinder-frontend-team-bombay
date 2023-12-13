@@ -11,7 +11,7 @@ describe("<CatNew />", () => {
             </BrowserRouter>
         )
     }
-    it("render a new cat for" , () => {
+    it("render a new cat form" , () => {
         renderNew()            
         screen.logTestingPlaygroundURL()
         const nameInput = screen.getByRole("textbox", {
