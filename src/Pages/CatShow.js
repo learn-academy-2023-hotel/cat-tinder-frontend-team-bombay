@@ -1,10 +1,12 @@
 import React from 'react'
 import { useParams, NavLink } from 'react-router-dom'
+import { Button } from "reactstrap";
 
-const CatShow = ({ cats }) => {
+const CatShow = ({ cats, deleteCat }) => {
     const { id } = useParams()
     let currentCat = cats?.find((cat) => cat.id === +id)
-    
+
+
     return (
        <>
         {currentCat && (
@@ -15,6 +17,7 @@ const CatShow = ({ cats }) => {
                 <NavLink to={`/catedit/${currentCat.id}`} classname="nav-link">
                     Edit Cat Profile
                 </NavLink>
+                <NavLink to="/catindex" className="nav-link"><Button onClick={ () => deleteCat(currentCat.id) }>Delete Pawfile</Button></NavLink>
             </>
         )}
        </>     

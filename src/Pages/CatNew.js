@@ -23,7 +23,6 @@ const CatNew = ({ createKitty }) => {
         navigate("/catindex")
     }
 
-
   return (
 
     <Form >
