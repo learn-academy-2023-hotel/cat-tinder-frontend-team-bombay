@@ -1,10 +1,15 @@
-.header{
-  text-align: center; 
-}
-
 .footer{
+   display: flex;
 	 align-items: center;
 	 text-align: center;
+   justify-content: center; 
+   background-color: pink;
+   font-family: "copperplate";
+   border-style: double;
+   font-weight: bolder;
+   border-color: rgb(25, 135, 84);
+   height: 100%; 
+   color: rgb(15, 8, 75)
   }
 
 .notfound{
@@ -19,8 +24,121 @@
 }
 
 .attributes{
+  display: flex;
   text-align:center
 }
+
+.home-background{
+  background-image: url("https://www.rd.com/wp-content/uploads/2023/11/Cats-Have-276-Facial-Expressions_FT.jpg?resize=768%2C768");
+  display: flex;
+  height: 750px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat; 
+  align-content: center; 
+}
+.home-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "copperplate";
+  color: whitesmoke
+}
+.nav-link-new{
+  padding: 10px;
+}
+.background-color{
+  background-color: pink;
+}
+.index-background{
+  background: rgb(117, 139, 253);
+}
+.cat-pics{
+  width: auto;
+  max-height: 400px;
+}
+img{
+  border: 5px solid;
+  border-color: rgb(25, 135, 84);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.name-section{
+  font-family: "Papyrus";
+  font-weight: bolder;
+  color: whitesmoke !important;
+}
+.age-section{
+  font-family: "Papyrus";
+  font-weight: bold;
+  color: whitesmoke !important;
+}
+.status-section{
+  font-family: "Papyrus";
+  color: whitesmoke !important;
+  font-size: 20px;
+}
+.cat-pic{
+  width: auto;
+  max-height: 400px;
+}
+.nav-link-edit{
+  padding: 10px;
+}
+.nav-link-index{
+  padding: 10px;
+}
+.nav-link-home{
+  padding: 10px;
+}
+.cat-name-style{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.pic-center{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.status-style{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.show-background{
+  background-color: whitesmoke;
+}
+.edit-input{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "papyrus";
+  border-style: solid;
+  border-color: whitesmoke;
+}
+.edit-label{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "copperplate";
+  font-size: 25px;
+  color: whitesmoke;
+}
+.edit-background{
+  background-color: rgb(117, 139, 253);
+}
+.card-background{
+  background-color: rgb(117, 139, 253) !important;
+}
+
+
+
+
+
+
 
 
 

@@ -7,8 +7,8 @@ import CatEdit from "./pages/CatEdit"
 import CatIndex from "./pages/CatIndex"
 import CatShow from "./pages/CatShow"
 import CatNew from "./pages/CatNew"
-import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
+import Home from "./pages/Home"
 
 const App = () => {
   const [cats, setCats] = useState([])
