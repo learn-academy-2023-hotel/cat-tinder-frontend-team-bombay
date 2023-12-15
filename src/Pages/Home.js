@@ -1,17 +1,20 @@
 import React from 'react'
+import { Button } from 'reactstrap'
+import { NavLink } from 'react-router-dom'
+
 
 const Home = () => {
     return (
-        <div> Home <p>
-            blah blah blah
-            </p> 
-            <img alt="" src="https://as2.ftcdn.net/v2/jpg/03/03/62/45/1000_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg">
-            </img>
-            <p>blah blah blah
-            </p><p>
-            blah blah blah
-            </p></div> 
-
+        <>
+        <div className='background-color'>
+         <div className="home-background"> 
+        </div> 
+        <div className='home-buttons'>
+            <NavLink to={"/catnew"} className="nav-link-new"><Button color="success">Create Your Pawfile!</Button></NavLink>
+            <NavLink to={"/catindex"} className="nav-link-all"><Button color="success">Sniff Out New Friends!</Button></NavLink>
+        </div>
+        </div>
+        </>
     )
 }
 

@@ -1,10 +1,16 @@
 import React from 'react'
-import { Card, CardBody, CardText, CardTitle, CardSubtitle } from 'reactstrap'
+import { Card, CardBody, CardText, CardTitle, CardSubtitle, Button } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 
 
 const CatIndex = ({ cats }) => {
     return (
+      <>
+      <div className='index-background'>
+      <div className='home-buttons'>
+      <NavLink to={"/catnew"} className="nav-link-new"><Button color="success">Create Your Pawfile!</Button></NavLink>
+      <NavLink to={"/"} className="nav-link"><Button color="success">Home</Button></NavLink>
+      </div>
         <main className='cat-index-cards'>
             {cats?.map((cat, index) => {
                 return (
@@ -15,10 +21,10 @@ const CatIndex = ({ cats }) => {
                     }}
                     key={index}
                   >
-                    <img
+                    <img className='cat-pics'
                       alt={`${cat.name}`} src={cat.image}
                     />
-                    <CardBody>
+                    <CardBody className="card-background">
                       <CardTitle className="name-section" tag="h2">{cat.name}
                       </CardTitle>
                       <CardSubtitle
@@ -27,17 +33,23 @@ const CatIndex = ({ cats }) => {
                       >
                         Age: {cat.age}
                       </CardSubtitle>
-                      <CardText>
-                        Think I'm cute? Click below!
+                      <br/>
+                      <CardText className='status-section'>
+                        Today's thoughts: {cat.enjoys}
                       </CardText>
                       <NavLink to={`/catshow/${cat.id}`} className="nav-link">
-                        More about {cat.name}
+                        <Button 
+                          color="light" outline>
+                          More about {cat.name}
+                        </Button>
                       </NavLink>
                     </CardBody>
                   </Card>
                 )
             })}
         </main>
+        </div>
+        </>
     )
 }
 
