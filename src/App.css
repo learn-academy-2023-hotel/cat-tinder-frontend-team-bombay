@@ -1,5 +1,6 @@
 .footer{
    display: flex;
+   flex-direction: column;
 	 align-items: center;
 	 text-align: center;
    justify-content: center; 
@@ -10,6 +11,19 @@
    border-color: rgb(25, 135, 84);
    height: 100%; 
    color: rgb(15, 8, 75)
+  }
+  .header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    background-color: pink;
+    font-family: "copperplate";
+    border-style: double;
+    font-weight: bolder;
+    border-color: rgb(25, 135, 84);
+    height: 100%; 
+    color: rgb(15, 8, 75)
   }
 
 .notfound{
@@ -31,12 +45,14 @@
 .home-background{
   background-image: url("https://www.rd.com/wp-content/uploads/2023/11/Cats-Have-276-Facial-Expressions_FT.jpg?resize=768%2C768");
   display: flex;
-  height: 750px;
+  height: 100vh;
+  object-fit: cover;
+  margin: 0 auto;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
   background-repeat: no-repeat; 
-  align-content: center; 
+  align-content: center;
+  flex-direction: column;
 }
 .home-buttons{
   display: flex;
@@ -49,6 +65,9 @@
   padding: 10px;
 }
 .background-color{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: pink;
 }
 .index-background{

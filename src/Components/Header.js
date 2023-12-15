@@ -3,7 +3,9 @@ import React from 'react'
 const Header = () => {
 
     return (
-        <h1 className="footer"> 🐈 FelineBook 🐈‍⬛ </h1> 
+        <div className="header">
+            <h1>🐈 FelineBook 🐈‍⬛</h1>
+        </div> 
           )
     }
 
