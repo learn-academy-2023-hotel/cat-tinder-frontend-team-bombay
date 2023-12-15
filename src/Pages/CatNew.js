@@ -29,6 +29,7 @@ const CatNew = ({ createKitty }) => {
         <div className='home-buttons'>
         <br/><br/>
         <NavLink to={"/"} className="nav-link"><Button color="success">Home</Button></NavLink>
+        <NavLink to={"/catindex"} className="nav-link-index"><Button color="success">Check Out Other Felines!</Button></NavLink>
         </div>
     <Form >
       <FormGroup>
